@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:whte;
+}
+
+.btn{
+    padding:0.5rem 0.75rem;
+    border:none;
+    font-size: 1rem;
+    margin:1rem 0.5rem;
+    &:hover{
+        cursor:pointer;
+    }
+}
+
+body{
+    background-color: #272727;
+    color: white;
+
+    header{
+        nav{
+            box-shadow: 0 8px 6px -6px black;
+            ul{
+                display:flex;
+                li{
+                    padding:1rem;
+                    a{
+                        font-size: 1.15rem;
+                        transition:all 0.3 ease;
+                        color: white;
+                        &:hover{
+                            color: yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        section.main-part{
+            padding:1rem;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.25rem;
+            }
+
+            div.all-inputs{
+                form{
+                    input,select{
+                        font-size: 1.05rem;
+                        padding:0.7rem;
+                        border:0.25px solid rgb(39,39,21);
+                        margin:0.35rem;
+                        border-radius: 0.25rem;
+                    }
+                    input.course-credits{
+                        width:12%;
+                    }
+                    button{
+                        border:none;
+                        cursor:pointer;
+                        background-color: #272727;
+                        i{
+                            font-size: 1.25rem;
+                            color: white;
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+
+            button.add-lint-button{
+                background-color: #272727;
+                border: none;
+                width: 2.5rem;
+                margin: 3rem 0rem;
+                cursor: pointer;
+                i{
+                    font-size: 2rem;
+                    color: white;
+                }
+            }
+
+            div.result{
+                width:200px;
+                height:200px;
+                border:3px solid red;
+                border-radius: 50%;
+                text-align: center;
+                animation: border_color 8s infinite;
+
+
+                p{
+                    margin-top: 15px;
+                }
+                h2#result-gpa{
+                    font-size: 3.5rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@keyframes border_color{
+    0%{
+        border-color: red;
+    }
+    33%{
+        border-color: limegreen;
+    }
+    66%{
+        border-color: yellow;
+    }
+}
