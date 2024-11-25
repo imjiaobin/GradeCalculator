@@ -136,6 +136,14 @@ body main section.main-part div.result h2#result-gpa {
   font-weight: bold;
 }
 
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 @keyframes border_color {
   0% {
     border-color: red;

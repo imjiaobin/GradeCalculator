@@ -52,11 +52,12 @@
             <div class="all-inputs">
                 <form>
                     <div class="grader">
-                        <input type="text"   class="course-type"    placeholder="課程分類" List="opt"/>
-                        <input type="text"   class="course-number"  placeholder="課程代號"/>
-                        <input type="number" class="course-credits" placeholder="學分" max="6" min="0">
-                        <select name="select" class="select">
+                        <input type="text"   class="course-type"    placeholder="課程分類" List="opt"/><!-- 
+                        --><input type="text"   class="course-number"  placeholder="課程代號"/><!--
+                         --><input type="number" class="course-credits" placeholder="學分" max="6" min="0"><!--
+                        --><select name="select" class="select">
                             <option value=""></option>
+                            <option value="A+">A+</option>
                             <option value="A">A</option>
                             <option value="A-">A-</option>
                             <option value="B+">B+</option>
@@ -69,8 +70,37 @@
                             <option value="D">D</option>
                             <option value="D-">D-</option>
                             <option value="F">F</option>
-                        </select>
+                        </select><!--
+                         -->
                         <button class="trash-button">
+                            <i class="fas fa-trash"></i>
+                        </button><!--
+                        -->
+                    </div>
+                </form>
+
+                <form>
+                    <div class="grader">
+                        <input type="text"   class="course-type"    placeholder="課程分類" List="opt"/><!--
+                        --><input type="text"   class="course-number"  placeholder="課程代號"/><!--
+                        --><input type="number" class="course-credits" placeholder="學分" max="6" min="0"><!--
+                        --><select name="select" class="select">
+                            <option value=""></option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="B-">B-</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="C-">C-</option>
+                            <option value="D+">D+</option>
+                            <option value="D">D</option>
+                            <option value="D-">D-</option>
+                            <option value="F">F</option>
+                        </select><!--
+                        --><button class="trash-button">
                             <i class="fas fa-trash"></i>
                         </button>
                     </div>
@@ -78,11 +108,12 @@
 
                 <form>
                     <div class="grader">
-                        <input type="text"   class="course-type"    placeholder="課程分類" List="opt"/>
-                        <input type="text"   class="course-number"  placeholder="課程代號"/>
-                        <input type="number" class="course-credits" placeholder="學分" max="6" min="0">
-                        <select name="select" class="select">
+                        <input type="text"   class="course-type"    placeholder="課程分類" List="opt"/><!--
+                        --><input type="text"   class="course-number"  placeholder="課程代號"/><!--
+                        --><input type="number" class="course-credits" placeholder="學分" max="6" min="0"><!--
+                        --><select name="select" class="select">
                             <option value=""></option>
+                            <option value="A+">A+</option>
                             <option value="A">A</option>
                             <option value="A-">A-</option>
                             <option value="B+">B+</option>
@@ -95,34 +126,8 @@
                             <option value="D">D</option>
                             <option value="D-">D-</option>
                             <option value="F">F</option>
-                        </select>
-                        <button class="trash-button">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                    </div>
-                </form>
-
-                <form>
-                    <div class="grader">
-                        <input type="text"   class="course-type"    placeholder="課程分類" List="opt"/>
-                        <input type="text"   class="course-number"  placeholder="課程代號"/>
-                        <input type="number" class="course-credits" placeholder="學分" max="6" min="0">
-                        <select name="select" class="select">
-                            <option value=""></option>
-                            <option value="A">A</option>
-                            <option value="A-">A-</option>
-                            <option value="B+">B+</option>
-                            <option value="B">B</option>
-                            <option value="B-">B-</option>
-                            <option value="C+">C+</option>
-                            <option value="C">C</option>
-                            <option value="C-">C-</option>
-                            <option value="D+">D+</option>
-                            <option value="D">D</option>
-                            <option value="D-">D-</option>
-                            <option value="F">F</option>
-                        </select>
-                        <button class="trash-button">
+                        </select><!--
+                        --><button class="trash-button">
                             <i class="fas fa-trash"></i>
                         </button>
                     </div>
@@ -131,7 +136,7 @@
             </div>
 
             <!-- 增行 -->
-            <button class="add-lint-button">
+            <button type="button" class="add-lint-button">
                 <i class="fas fa-plus-square"></i>
             </button>
 
